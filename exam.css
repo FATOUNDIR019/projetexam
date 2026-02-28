@@ -1,0 +1,218 @@
+body{
+margin: 0;
+font-family: Arial, Helvetica, sans-serif;
+background-color: #1a1a2e;/* bleu marrine fonce*/
+ color:white; 
+
+}
+
+
+
+.logo img{
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+} 
+header{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 20px;
+gap: 30px;
+ background-color: rgb(192, 155, 110);
+    font-family: 'Times New Roman', Times, serif;
+    color:black;
+    cursor: pointer;
+    text-decoration: underline;
+     background-image:url(boutique1.jpeg);
+}
+ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+
+}
+li a{
+    text-decoration: none;
+    font-size: 20px;
+    color:wheat;
+    background-color: rgb(73, 6, 40);
+    padding: 10px;
+    border-radius: 20px;
+
+}li a:hover{
+    color: rgb(59, 46, 12);
+    background-color: rgb(94, 111, 128);
+}.MAQUILLAGES{
+   
+    align-items: center;
+    justify-content: center;
+    color:white;
+     text-decoration: underline;
+
+}.container img{
+    height: 150px;
+    width: 250px;
+    border-radius:60% 40% 30% 70% / 60% 30% 70% 40%;
+    margin-top: 5%;
+    gap: 20%;
+    object-fit: cover;
+   
+}.container{
+    grid-template-columns: repeat(4,1fr);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}section h1{
+    text-align: center;
+    text-decoration: underline;
+  
+}.img1{
+    display: center;
+    justify-content: center;
+    gap: 30%;
+    
+}.price{
+   margin: 10px;
+    font-weight: bold;
+    color:white;
+}button{
+    display: block; /*ca force a aller a la ligne*/
+     background-color: #40e0d0;
+    color: #bb86fc;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+}button:hover {
+    background-color:#ff66cc;
+}input{
+    display: block;
+    margin: 8px auto;
+    color:black;
+}
+label{
+    color: wheat;
+}
+.INSTA{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+   
+}
+.INSTA img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.FACEBOOK{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    }
+.FACEBOOK img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.WHATSHAP{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    }
+.WHATSHAP img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}.form{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+    .fin{
+        text-align: center;
+        color:#bb86fc;
+        font-size: 30px;
+    }
+   .rotation{
+    width:100%;
+    overflow:hidden;
+    background:#1a0026;
+    padding:20px 0;
+}
+
+.rotation-track{
+    display:flex;
+    gap:20px;
+    animation:slide 10s linear infinite;
+}
+
+.rotation-track img{
+    width:200px;
+    height:200px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+/* Animation horizontale simple */
+@keyframes slide{
+    from{
+        transform:translateX(0);
+    }
+    to{
+        transform:translateX(-50%);
+    }
+}.defile-texte{
+    width:100%;
+    white-space:nowrap;
+    overflow:hidden;
+    background:#1a0026;
+    color:#ff66cc;
+    font-size:20px;
+    padding:10px 0;
+    box-sizing:border-box;
+}
+
+.defile-texte::after{
+    content: attr(data-text);
+}
+
+/* Animation */
+.defile-texte{
+    display:inline-block;
+    animation:defile 30s linear infinite;
+}
+
+@keyframes defile{
+    0%{
+        transform:translateX(100%);
+    }
+    100%{
+        transform:translateX(-100%);
+    }
+}.commentaire {
+  margin-top: 20px;
+}
+
+textarea {
+  width: 50%;
+  height: 80px;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid gray;
+}
+
+button {
+  background: purple;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 10px;
+  width: 50%;
+}
